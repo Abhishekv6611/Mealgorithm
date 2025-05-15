@@ -49,11 +49,11 @@ function Login() {
           {/* navbar */}
           <div className="flex justify-between pt-3 ">
 
-            <div className="px-3 flex md:justify-evenly gap-1 ">
+            <div className="px-3 flex md:justify-evenly gap-1 items-center">
               <div>
                 <p className="text-xl font-semibold text-[#ff8e9e] cursor-pointer">Mealgorithm</p>
               </div>
-              <div className="w-7 mt-1">
+              <div className="w-7 ">
                 <img className="rounded" src={Icon} alt="Mealgorithm icon" />
               </div>
             </div>
