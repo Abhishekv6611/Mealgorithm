@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react'
 function GenerateBox({output,loading}) {
   // Remove unwanted markdown syntax (###, **, ---)
   const sanitizedOutput = output
-    ? output.replace(/([#*_-]{2,})/g, '') // Regex to remove Markdown syntax like `**`, `###`, `---`
+    ? output.replace(/[#*_|\-]/g, '') // Regex to remove Markdown syntax like `**`, `###`, `---`
     : "Welcome to Mealgorithm";
     return (
     <>
