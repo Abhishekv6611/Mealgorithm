@@ -1,0 +1,35 @@
+@keyframes rotate360 {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-rotate360 {
+  animation: rotate360 2s linear infinite;
+}
+
+.sparkle-path {
+  fill: currentColor;
+  stroke: currentColor;
+  transform-origin: center;
+  color: white;
+}
+
+.group:hover .sparkle-path {
+  animation: sparkleAnim 1.5s linear 0.5s infinite;
+}
+
+@keyframes sparkleAnim {
+  0%, 34%, 71%, 100% {
+    transform: scale(1);
+  }
+  17% {
+    transform: scale(1.2);
+  }
+  49% {
+    transform: scale(1.2);
+  }
+  83% {
+    transform: scale(1.2);
+  }
+}
