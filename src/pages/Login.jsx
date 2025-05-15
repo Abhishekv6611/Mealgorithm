@@ -92,7 +92,7 @@ function Login() {
                 Personalized Indian diet plans for pregnant women, tailored to your unique needs and preferences.</h2>
             </div>
           </div>
-          <div className="py-0 md:py-5  md:mt-5 ml-2 md:ml-40 w-100   flex justify-evenly items-center gap-5 text-white">
+          <div className="py-0 md:py-5  md:mt-5 ml-0 md:ml-40 w-100   flex justify-evenly items-center gap-5 text-white">
             <div className="bg-[#ff8e9e]  rounded-full cursor-pointer hover:bg-[#ed8e9b] p-3 px-2  duration-150 transition-all">
               <SignedOut>
                 <SignInButton mode="modal">
