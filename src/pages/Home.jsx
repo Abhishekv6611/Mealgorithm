@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
-// import useUserContext from '../hooks/useUserContext';
+import  { useEffect, useState } from 'react';
 import Navbar from '../components/Navbar';
 import GenerateBox from '../components/GenerateBox';
 import InputSection from '../components/InputSection';
 import GradientButton from '../components/GradientButton';
 import openai from "../openapi";
+import useUserContext from '../hooks/useUserContext';
+import { useNavigate } from 'react-router-dom';
 
 function Home() {
+  const { user } = useUserContext()
+  const navigate =useNavigate()
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false)
   const [inputs, setInputs] = useState({
@@ -45,6 +48,11 @@ function Home() {
     }
   };
 
+    useEffect(() => {
+      if (!user) {
+        navigate('/')
+      }
+    }, [user]);
 
   return (
     <div className="min-h-screen flex flex-col bg-white">
