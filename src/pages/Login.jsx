@@ -47,7 +47,7 @@ function Login() {
 
 
           {/* navbar */}
-          <div className="flex justify-between pt-3 shadow">
+          <div className="flex justify-between pt-3 ">
 
             <div className="px-3 flex md:justify-evenly gap-1 ">
               <div>
@@ -57,7 +57,7 @@ function Login() {
                 <img className="rounded" src={Icon} alt="Mealgorithm icon" />
               </div>
             </div>
-            <div className="gap-4 md:gap-10 flex px-3 items-center mb-1">
+            <div className="gap-4 md:gap-10 flex px-1 items-center mb-1">
               <a href="#how-it-works" className="cursor-pointer hover:text-[#ff8e9e]">How It Works</a>
               <SignedOut>
                 <SignInButton mode="modal">
@@ -84,8 +84,6 @@ function Login() {
                 Nourishing Two Lives With One Diet
                 Personalized Indian diet plans for pregnant women, tailored to your unique needs and preferences.</h2>
             </div>
-            <div></div>
-
           </div>
           <div className="hidden md:block">
             <div className="w-[60%] px-3">
@@ -95,7 +93,7 @@ function Login() {
             </div>
           </div>
           <div className="py-0 md:py-5  md:mt-5 ml-2 md:ml-40 w-100   flex justify-evenly items-center gap-5 text-white">
-            <div className="bg-[#ff8e9e]  rounded-full cursor-pointer hover:bg-[#ed8e9b] p-3 px-5  duration-150 transition-all">
+            <div className="bg-[#ff8e9e]  rounded-full cursor-pointer hover:bg-[#ed8e9b] p-3 px-2  duration-150 transition-all">
               <SignedOut>
                 <SignInButton mode="modal">
                   <button className="cursor-pointer text-lg font-semibold ">Generate My Diet Plan</button>
